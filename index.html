@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
 
 <head>
   <meta charset="UTF-8">
@@ -22,8 +21,42 @@
   <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
   <link rel="stylesheet" href="assets/css/main.css">
 
+
+  <style>
+
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  height: 100%;
+  background: #ff007f;
+  transition: right 0.3s ease;
+  z-index: 9999;
+}
+
+.mobile-sidebar.active {
+  right: 0;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+  </style>
   <!--=====  JS SCRIPT LINK =======-->
   <script src="assets/js/plugins/jquery-3-6-0.min.js"></script>
+ 
+
+
+
+
+
+
+
 </head>
 
 <body class="homepage4-body">
@@ -113,8 +146,8 @@
         <li><a href="/">Home </a>
         </li>
 
-        <li><a href="#aboutsection">About</a></li>
-        <li><a href="#servicesection">Services</a> </li>
+        <li><a href="/#aboutsection">About</a></li>
+        <li><a href="/#servicesection">Services</a> </li>
         <li><a href="tel:+91 8888869612">Contact Us</a></li>
       </ul>
 
@@ -938,201 +971,38 @@ Packy Media delivers results that amplify your message and strengthen public inf
   <script src="assets/js/plugins/circle-progress.js"></script>
   <script src="assets/js/main.js"></script>
 
-</body>
 
-</html>
-=======
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Packy Media Services</title>
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    body { font-family: "Poppins", sans-serif; }
-  </style>
-</head>
-
-<body class="bg-gray-50 text-gray-800">
-
-  <!-- NAVBAR -->
-  <nav class="fixed top-0 left-0 w-full bg-white shadow z-50">
-    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-
-      <!-- Logo -->
-      <img src="logo5.png" class="h-14" alt="Packy Media Services Logo" />
-
-      <!-- Desktop Menu -->
-      <div class="hidden md:flex space-x-8 font-semibold">
-        <a href="/" class="hover:text-orange-600">Home</a>
-        <a href="#about" class="hover:text-orange-600">About</a>
-        <a href="#services" class="hover:text-orange-600">Services</a>
-        <a href="#why" class="hover:text-orange-600">Why Us</a>
-        <a href="#contact" class="hover:text-orange-600">Contact</a>
-      </div>
-
-      <!-- Mobile Menu Button -->
-      <button id="menuBtn" class="md:hidden text-3xl">
-        ☰
-      </button>
-    </div>
-
-    <!-- Vertical Mobile Dropdown -->
-    <div id="mobileMenu" class="hidden flex-col bg-white shadow-md px-6 py-4 space-y-3 md:hidden">
-      <a href="/" class="block font-semibold py-2 border-b hover:text-orange-600">Home</a>
-      <a href="#about" class="hover:text-orange-600">About</a>
-      <a href="#services" class="block font-semibold py-2 border-b hover:text-orange-600">Services</a>
-      <a href="#why" class="block font-semibold py-2 border-b hover:text-orange-600">Why Us</a>
-      <a href="#contact" class="block font-semibold py-2 hover:text-orange-600">Contact</a>
-    </div>
-
-  </nav>
-
-  <!-- SPACE below fixed nav -->
-  <div class="h-20"></div>
-
-  <!-- HERO SECTION -->
-  <section id="home" class="min-h-[80vh] flex items-center justify-center text-center text-white 
-    bg-[url('https://images.unsplash.com/photo-1498050108023-c5249f4df085')] 
-    bg-cover bg-center bg-black/60 bg-blend-overlay px-4">
-
-    <div>
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">
-        Grow Your Business with<br> Data-Driven Digital Marketing
-      </h1>
-
-      <p class="text-lg md:text-xl max-w-2xl mx-auto">
-        Transform your brand with powerful marketing strategies, SEO expertise, 
-        and high-impact social media campaigns.
-      </p>
-
-      <a href="#contact" class="inline-block mt-6 bg-orange-600 text-white px-8 py-3 rounded-lg 
-        text-lg font-semibold hover:bg-orange-700">
-        Get Free Strategy Call
-      </a>
-    </div>
-  </section>
-
-    <!-- ABOUT -->
-  <section id="about" class="py-20 bg-white px-6">
-    <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-4xl font-bold mb-8">About Us</h2>
-      <p class="text-lg max-w-4xl mx-auto leading-relaxed">
-        Packy Media Services is a full-suite digital marketing agency offering global 
-        solutions including SEO, SMM, Ads, and Website Development. We combine creativity 
-        with data-driven strategies to deliver measurable business growth.
-        <br><br>
-        Our team sets a benchmark with every project—research, planning, design, 
-        and execution. We simplify processes and deliver meaningful results with 
-        clear strategies and powerful communication.
-      </p>
-    </div>
-  </section>
-
-
-  <!-- SERVICES -->
-  <section id="services" class="py-20 px-6">
-    <div class="max-w-7xl mx-auto text-center">
-
-      <h2 class="text-4xl font-bold mb-10">Our Digital Marketing Expertise</h2>
-
-      <div class="grid md:grid-cols-3 gap-8">
-
-        <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
-          <h3 class="text-orange-600 text-2xl font-bold mb-2">SEO Optimization</h3>
-          <p>Rank higher, boost visibility, and drive organic traffic with proven SEO strategies.</p>
-        </div>
-
-        <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
-          <h3 class="text-orange-600 text-2xl font-bold mb-2">Social Media Management</h3>
-          <p>Engage audiences and grow your digital presence across all major platforms.</p>
-        </div>
-
-        <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
-          <h3 class="text-orange-600 text-2xl font-bold mb-2">Performance Marketing</h3>
-          <p>High-converting Google & Meta ads optimized for maximum ROI.</p>
-        </div>
-
-        <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
-          <h3 class="text-orange-600 text-2xl font-bold mb-2">Website Development</h3>
-          <p>Modern, responsive websites built to convert visitors into customers.</p>
-        </div>
-
-        <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
-          <h3 class="text-orange-600 text-2xl font-bold mb-2">Branding & Creative Design</h3>
-          <p>Logos, graphics, and visual stories that elevate brand identity.</p>
-        </div>
-
-        <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
-          <h3 class="text-orange-600 text-2xl font-bold mb-2">Local SEO & Listing</h3>
-          <p>Help customers find you easily with optimized local business listings.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- WHY CHOOSE US -->
-  <section id="why" class="py-20 px-6 bg-gray-100">
-    <div class="max-w-6xl mx-auto text-center">
-
-      <h2 class="text-4xl font-bold mb-10">Why Businesses Trust Us</h2>
-
-      <div class="grid md:grid-cols-2 gap-8 text-left max-w-4xl mx-auto">
-
-        <div class="bg-white p-6 shadow rounded-lg">✔ Strategic & Data-Driven Planning</div>
-        <div class="bg-white p-6 shadow rounded-lg">✔ Clear Communication & Transparency</div>
-        <div class="bg-white p-6 shadow rounded-lg">✔ Deep Market & Audience Research</div>
-        <div class="bg-white p-6 shadow rounded-lg">✔ Customized Solutions for Every Brand</div>
-        <div class="bg-white p-6 shadow rounded-lg">✔ Consistent Monthly Performance Growth</div>
-        <div class="bg-white p-6 shadow rounded-lg">✔ Complete Digital Support in One Place</div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="py-20 bg-orange-600 text-white text-center px-6">
-    <h2 class="text-4xl font-bold mb-6">Let’s Build Your Brand</h2>
-
-    <p class="text-xl">📍 Nagar Parishad – Rajani Chowk Rd, Complex, Washim, Maharashtra 444505</p>
-    <p class="text-xl mt-2">📞 <a href="tel:+918888869612" class="underline">+91 88888 69612</a></p>
-    <p class="text-xl">📧 <a href="mailto:info@packymediaservices.in" class="underline">info@packymediaservices.in</a></p>
-
-    <a href="https://wa.me/918888869612" 
-       class="inline-block mt-6 bg-white text-orange-600 px-8 py-3 font-semibold rounded-lg hover:bg-gray-200">
-      Chat on WhatsApp
-    </a>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="py-5 bg-black text-center text-gray-400 text-sm">
-    © 2025 Packy Media Services — All Rights Reserved.
-  </footer>
-
-  <!-- MOBILE MENU JS -->
   <script>
-    const menuBtn = document.getElementById("menuBtn");
-    const mobileMenu = document.getElementById("mobileMenu");
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuIcon = document.querySelector('.mobile-nav-icon');
+    const sidebar = document.querySelector('.mobile-sidebar');
+    const closeIcon = document.querySelector('.menu-close');
+    const allSidebarLinks = document.querySelectorAll('.mobile-sidebar a');
 
-    menuBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
+    // Open sidebar
+    menuIcon.addEventListener('click', () => {
+      sidebar.classList.add('active');
     });
 
-    // Close mobile menu when clicking any link
-    mobileMenu.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", () => {
-        mobileMenu.classList.add("hidden");
+    // Close sidebar
+    closeIcon.addEventListener('click', () => {
+      sidebar.classList.remove('active');
+    });
+
+    // Close sidebar on any link click
+    allSidebarLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        // Delay to allow anchor scroll
+        setTimeout(() => {
+          sidebar.classList.remove('active');
+        }, 200);
       });
     });
-  </script>
+  });
+</script>
+
+
 
 </body>
+
 </html>
->>>>>>> dfef42920c95491e586b653af8ebd1c99c031995
